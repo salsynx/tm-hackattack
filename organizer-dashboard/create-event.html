@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Event - College Event Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f5f7fa; color: #333; }
+
+    header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 15px 40px; background: #0055cc; color: #fff;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    header h1 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 24px; }
+    header .user { font-size: 14px; cursor: pointer; }
+
+    .main { padding: 30px; max-width: 800px; margin: 60px auto 0 auto; }
+    .form-card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+    .form-card h2 { font-family: 'Poppins', sans-serif; font-weight: 700; margin-bottom: 20px; }
+    .form-card label { display: block; margin-top: 15px; font-weight: 600; }
+    .form-card input, .form-card textarea { width: 100%; padding: 10px 12px; margin-top: 5px; border-radius: 8px; border: 1px solid #ccc; }
+    .form-card button { margin-top: 20px; padding: 10px 25px; border: none; border-radius: 12px; background: #ff6a00; color: #fff; font-weight: 700; cursor: pointer; transition: 0.3s; }
+    .form-card button:hover { background: #ee0979; }
+
+    footer { text-align: center; padding: 20px 0; margin-top: 50px; font-size: 14px; color: #777; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>➕ Create Event</h1>
+    <div class="user">Organizer ▾</div>
+</header>
+
+<div class="main">
+    <div class="form-card">
+        <h2>New Event Details</h2>
+        <form>
+            <label>Event Name</label>
+            <input type="text" placeholder="Enter event name" required>
+
+            <label>Date</label>
+            <input type="date" required>
+
+            <label>Venue</label>
+            <input type="text" placeholder="Enter venue" required>
+
+            <label>Description</label>
+            <textarea rows="4" placeholder="Enter event description"></textarea>
+
+            <label>Max Participants</label>
+            <input type="number" placeholder="Enter max participants" required>
+
+            <button type="submit">Create Event</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    © 2025 College Event Manager | Privacy | Terms
+</footer>
+
+</body>
+</html>
