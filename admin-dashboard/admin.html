@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard - College Event Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background: #f5f7fa; color: #333; }
+
+    header {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 15px 40px; background: #0055cc; color: #fff;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    header h1 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 24px; }
+    header .user { font-size: 14px; cursor: pointer; }
+
+    .sidebar {
+        width: 220px; background: #fff; height: calc(100vh - 60px); 
+        padding: 20px; position: fixed; top: 60px; left: 0; box-shadow: 2px 0 10px rgba(0,0,0,0.05); border-right: 1px solid #ddd;
+    }
+    .sidebar a { 
+        display: block; 
+        padding: 12px 10px; 
+        margin-bottom: 10px; 
+        color: #333; 
+        font-weight: 700;  
+        text-decoration: none;  
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .sidebar a:hover { background: #0055cc; color: #fff; }
+
+    .main { margin-left: 240px; padding: 30px; }
+    .dashboard-header { 
+        background: #fff; padding: 20px 30px; border-radius: 12px; 
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1); margin-bottom: 30px;
+    }
+    .dashboard-header h2 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 28px; color: #222; }
+    .dashboard-header p { font-size: 16px; color: #555; margin-top: 5px; }
+
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-bottom: 40px; }
+    .card { background: #fff; border-radius: 16px; padding: 25px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card h3 { font-family: 'Poppins', sans-serif; font-weight: 600; margin-bottom: 10px; color: #333; }
+    .card p { font-size: 24px; font-weight: 700; color: #0055cc; }
+
+    footer { text-align: center; padding: 20px 0; margin-top: 50px; font-size: 14px; color: #777; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>📊 Admin Dashboard</h1>
+    <div class="user">Admin ▾</div>
+</header>
+
+<div class="sidebar">
+    <a href="#">📊 Dashboard</a>
+    <a href="#">👥 Users</a>
+    <a href="#">📅 Events</a>
+    <a href="#">🎓 Certificates</a>
+    <a href="#">📑 Reports</a>
+    <a href="#">⚙ Settings</a>
+</div>
+
+<div class="main">
+    <div class="dashboard-header">
+        <h2>Welcome, Admin</h2>
+        <p>Manage organizers, participants, and overall college events.</p>
+    </div>
+
+    <div class="stats">
+        <div class="card">
+            <h3>Total Events</h3>
+            <p>12</p>
+        </div>
+        <div class="card">
+            <h3>Total Participants</h3>
+            <p>450</p>
+        </div>
+        <div class="card">
+            <h3>Total Organizers</h3>
+            <p>5</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 College Event Manager | Privacy | Terms
+</footer>
+
+</body>
+</html>
